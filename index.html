@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MultiQuotePro – HOA & Condo Association Insurance Quotes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Get multiple competitive HOA and condo association insurance quotes through one simple form. Make sure your association has the coverage it truly needs." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="page">
+  <div class="wrapper">
+    <header>
+      <div class="logo">MultiQuote<span>Pro</span></div>
+      <nav>
+        <a href="#how-it-works">How it works</a>
+        <a href="#coverage">Coverage gaps</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <h1>Smarter insurance quotes for <span>HOA & Condo Associations</span>.</h1>
+          <p>
+            One simple form. Multiple quotes from trusted insurance partners.
+            Make sure your association has the coverage it needs—without overpaying.
+          </p>
+
+          <ul class="hero-bullets">
+            <li>HOA & condo association master policies</li>
+            <li>Replacement cost, liability, D&O, umbrella, and more</li>
+            <li>No obligation. Fast responses from licensed professionals.</li>
+          </ul>
+
+          <div style="margin-top: 1.2rem;">
+            <a href="#quote-form" class="btn btn-primary">Get my association quotes</a>
+            <a href="#coverage" class="btn btn-secondary">See what’s typically missing</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="card" id="quote-form">
+            <h2>Get HOA / Condo insurance quotes</h2>
+            <p>Tell us a bit about your association. We’ll connect you with options and help make sure your coverage is complete.</p>
+
+            <form id="leadForm">
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="first_name">First name*</label>
+                  <input id="first_name" name="first_name" required />
+                </div>
+                <div class="form-field">
+                  <label for="last_name">Last name*</label>
+                  <input id="last_name" name="last_name" required />
+                </div>
+
+                <div class="form-field">
+                  <label for="org_name">Association name*</label>
+                  <input id="org_name" name="org_name" required />
+                </div>
+                <div class="form-field">
+                  <label for="role">Your role</label>
+                  <input id="role" name="role" placeholder="Board member, manager, owner, etc." />
+                </div>
+
+                <div class="form-field">
+                  <label for="email">Email*</label>
+                  <input id="email" name="email" type="email" required />
+                </div>
+                <div class="form-field">
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" type="tel" />
+                </div>
+
+                <div class="form-field">
+                  <label for="city">City</label>
+                  <input id="city" name="city" />
+                </div>
+                <div class="form-field">
+                  <label for="state">State</label>
+                  <input id="state" name="state" maxlength="2" placeholder="ID, CA, TX..." />
+                </div>
+
+                <div class="form-field">
+                  <label for="zip">ZIP</label>
+                  <input id="zip" name="zip" />
+                </div>
+                <div class="form-field">
+                  <label for="unit_count">Number of units</label>
+                  <input id="unit_count" name="unit_count" type="number" min="0" />
+                </div>
+
+                <div class="form-field" style="grid-column: 1 / -1;">
+                  <label for="notes">Anything we should know?</label>
+                  <textarea id="notes" name="notes" placeholder="Renewal date, current carrier, premium, coverage concerns..."></textarea>
+                  <div class="helper">The more detail you share, the more precise your quotes can be.</div>
+                </div>
+              </div>
+
+              <!-- Hidden fields for tracking (we'll populate with JS later) -->
+              <input type="hidden" name="utm_source" id="utm_source" />
+              <input type="hidden" name="utm_medium" id="utm_medium" />
+              <input type="hidden" name="utm_campaign" id="utm_campaign" />
+              <input type="hidden" name="source" value="website" />
+
+              <div style="margin-top: 1rem;">
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Get my quotes & coverage review</button>
+                <div class="helper" style="margin-top: 0.3rem;">
+                  By submitting, you agree that a licensed insurance professional may contact you about your association’s coverage.
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="how-it-works">
+        <h2>How MultiQuotePro works</h2>
+        <p>
+          We make it easy for HOA and condo association decision makers to see multiple insurance options side by side.
+        </p>
+        <div class="section-grid">
+          <div class="section-card">
+            <h3>1. Share your association details</h3>
+            <p>Tell us about your property, unit count, and any coverage concerns. One form—no endless phone calls.</p>
+          </div>
+          <div class="section-card">
+            <h3>2. We connect you with quotes</h3>
+            <p>We work with insurance professionals who understand HOA and condo association coverage and can shop markets for you.</p>
+          </div>
+          <div class="section-card">
+            <h3>3. Compare & decide confidently</h3>
+            <p>Review options, fill coverage gaps, and choose the policy that best fits your association’s risk and budget.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="coverage">
+        <h2>Are you sure your association has the coverage it needs?</h2>
+        <p>
+          Many HOAs and condo associations discover gaps only when there’s a claim. We help surface those risks before it’s too late.
+        </p>
+        <div class="section-grid">
+          <div class="section-card">
+            <h3>Property & replacement cost</h3>
+            <p>Is your building insured to a realistic replacement cost—at today’s construction prices?</p>
+          </div>
+          <div class="section-card">
+            <h3>Liability & umbrella limits</h3>
+            <p>Are your liability limits high enough for serious slip-and-fall, pool, or common-area incidents?</p>
+          </div>
+          <div class="section-card">
+            <h3>Directors & Officers (D&O)</h3>
+            <p>Are board members personally protected from claims tied to their decisions?</p>
+          </div>
+          <div class="section-card">
+            <h3>Specialty coverages</h3>
+            <p>Crime, cyber, equipment breakdown, ordinance or law, and more—depending on your association’s risk profile.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <h2>Quick answers</h2>
+        <div class="section-grid">
+          <div class="section-card">
+            <h3>Does it cost anything to request quotes?</h3>
+            <p>No. Requesting quotes and a coverage review through MultiQuotePro is free and carries no obligation to buy.</p>
+          </div>
+          <div class="section-card">
+            <h3>Who will contact me?</h3>
+            <p>A licensed insurance professional who works with HOA and condo associations and can access multiple carriers.</p>
+          </div>
+          <div class="section-card">
+            <h3>How quickly will I hear back?</h3>
+            <p>Most associations hear from an insurance professional within one business day, often much sooner.</p>
+          </div>
+          <div class="section-card">
+            <h3>Do you work with self-managed and professionally managed associations?</h3>
+            <p>Yes. Board-led and professionally managed associations are both welcome.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      &copy; <span id="year"></span> MultiQuotePro. All rights reserved.
+      &nbsp;|&nbsp; Not a licensed insurer; we connect you with licensed insurance professionals.
+    </footer>
+  </div>
+</div>
+
+<script>
+  // Set year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Populate UTM fields if present
+  const params = new URLSearchParams(window.location.search);
+  ['utm_source','utm_medium','utm_campaign'].forEach(key => {
+    const el = document.getElementById(key);
+    if (el && params.get(key)) el.value = params.get(key);
+  });
+
+  // Handle form submit (will call Cloudflare Worker later)
+  const form = document.getElementById('leadForm');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+
+    try {
+      const resp = await fetch('/api/submit', {
+        method: 'POST',
+        body: data
+      });
+
+      if (resp.ok) {
+        const json = await resp.json().catch(() => ({}));
+        if (json.success !== false) {
+          window.location.href = '/thank-you.html';
+          return;
+        }
+      }
+
+      alert('There was an issue submitting your request. Please try again in a moment.');
+    } catch (err) {
+      alert('Network error. Please try again.');
+    }
+  });
+</script>
+</body>
+</html>
