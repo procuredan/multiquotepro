@@ -45,7 +45,11 @@
             <h2>Get HOA / Condo insurance quotes</h2>
             <p>Tell us a bit about your association. We’ll connect you with options and help make sure your coverage is complete.</p>
 
-            <form id="leadForm">
+           <form
+  id="leadForm"
+  action="https://formspree.io/f/mldqwpjg"
+  method="POST"
+>
               <div class="form-grid">
                 <div class="form-field">
                   <label for="first_name">First name*</label>
@@ -203,31 +207,7 @@
     if (el && params.get(key)) el.value = params.get(key);
   });
 
-  // Handle form submit (will call Cloudflare Worker later)
-  const form = document.getElementById('leadForm');
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const data = new FormData(form);
-
-    try {
-      const resp = await fetch('/api/submit', {
-        method: 'POST',
-        body: data
-      });
-
-      if (resp.ok) {
-        const json = await resp.json().catch(() => ({}));
-        if (json.success !== false) {
-          window.location.href = '/thank-you.html';
-          return;
-        }
-      }
-
-      alert('There was an issue submitting your request. Please try again in a moment.');
-    } catch (err) {
-      alert('Network error. Please try again.');
-    }
-  });
+ 
 </script>
 </body>
 </html>
