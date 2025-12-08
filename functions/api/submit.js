@@ -1,5 +1,8 @@
 // functions/api/submit.js
-export async function onRequestPost({ request, env }) {
+export async function onRequest({ request, env }) {
+  if (request.method !== 'POST') {
+    return new Response('Method Not Allowed', { status: 405 });
+  }
   const headers = { 'content-type': 'application/json' };
 
   try {
