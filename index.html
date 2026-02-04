@@ -50,78 +50,113 @@
   action="https://formspree.io/f/mldqwpjg"
   method="POST"
 >
-              <div class="form-grid">
-                <div class="form-field">
-                  <label for="first_name">First name*</label>
-                  <input id="first_name" name="first_name" required />
-                </div>
-                <div class="form-field">
-                  <label for="last_name">Last name*</label>
-                  <input id="last_name" name="last_name" required />
-                </div>
+  <!-- Step indicator -->
+  <div class="step-indicator">
+    <div class="step-dot active" id="dot1">1</div>
+    <div class="step-line"></div>
+    <div class="step-dot" id="dot2">2</div>
+  </div>
+  <div class="step-label" id="stepLabel">Step 1 of 2 — Contact info</div>
 
-                <div class="form-field">
-                  <label for="org_name">Association name*</label>
-                  <input id="org_name" name="org_name" required />
-                </div>
-                <div class="form-field">
-                  <label for="role">Your role</label>
-                  <input id="role" name="role" placeholder="Board member, manager, owner, etc." />
-                </div>
+  <!-- STEP 1 -->
+  <div id="step1">
+    <div class="form-grid">
+      <div class="form-field">
+        <label for="first_name">First name*</label>
+        <input id="first_name" name="first_name" required />
+      </div>
 
-                <div class="form-field">
-                  <label for="email">Email*</label>
-                  <input id="email" name="email" type="email" required />
-                </div>
-                <div class="form-field">
-                  <label for="phone">Phone</label>
-                  <input id="phone" name="phone" type="tel" />
-                </div>
+      <div class="form-field">
+        <label for="last_name">Last name*</label>
+        <input id="last_name" name="last_name" required />
+      </div>
 
-                <div class="form-field">
-                  <label for="city">City</label>
-                  <input id="city" name="city" />
-                </div>
-                <div class="form-field">
-                  <label for="state">State</label>
-                  <input id="state" name="state" maxlength="2" placeholder="ID, CA, TX..." />
-                </div>
+      <div class="form-field">
+        <label for="email">Email*</label>
+        <input id="email" name="email" type="email" required />
+      </div>
 
-                <div class="form-field">
-                  <label for="zip">ZIP</label>
-                  <input id="zip" name="zip" />
-                </div>
-                <div class="form-field">
-                  <label for="unit_count">Number of units</label>
-                  <input id="unit_count" name="unit_count" type="number" min="0" />
-                </div>
+      <div class="form-field">
+        <label for="phone">Phone*</label>
+        <input id="phone" name="phone" type="tel" required />
+      </div>
+    </div>
 
-                <div class="form-field" style="grid-column: 1 / -1;">
-                  <label for="notes">Anything we should know?</label>
-                  <textarea id="notes" name="notes" placeholder="Renewal date, current carrier, premium, coverage concerns..."></textarea>
-                  <div class="helper">The more detail you share, the more precise your quotes can be.</div>
-                </div>
-              </div>
+    <div style="margin-top: 1rem;">
+      <button type="button" class="btn btn-primary" style="width: 100%;" id="nextBtn">
+        Next →
+      </button>
+    </div>
+  </div>
 
-              <!-- Hidden fields for tracking (we'll populate with JS later) -->
-              <input type="hidden" name="utm_source" id="utm_source" />
-              <input type="hidden" name="utm_medium" id="utm_medium" />
-              <input type="hidden" name="utm_campaign" id="utm_campaign" />
-              <input type="hidden" name="source" value="website" />
+  <!-- STEP 2 -->
+  <div id="step2" style="display:none;">
+    <div class="form-grid">
+      <div class="form-field">
+        <label for="org_name">Association name*</label>
+        <input id="org_name" name="org_name" required />
+      </div>
 
-              <div style="margin-top: 1rem;">
-                <button type="submit" class="btn btn-primary" style="width: 100%;">Get my quotes & coverage review</button>
-               <div class="helper" style="margin-top: 0.5rem; font-size: 0.85rem; line-height: 1.35;">
-    By submitting this form, you agree that <strong>The Partners Group LLC</strong> and its insurance partners may 
-    contact you by phone, email, and text/SMS regarding your association’s insurance needs, including through 
-    automated dialing systems or prerecorded messages. Consent is not a condition of any purchase. 
-    Message and data rates may apply. You may opt out at any time.
-    <br><br>
-    View our <a href="/privacy.html" target="_blank">Privacy Policy</a> and 
-    <a href="/terms.html" target="_blank">Terms & Conditions</a>.
-</div>
-              </div>
-            </form>
+      <div class="form-field">
+        <label for="role">Your role*</label>
+        <input id="role" name="role" placeholder="Board member, manager, owner, etc." required />
+      </div>
+
+      <div class="form-field">
+        <label for="city">City*</label>
+        <input id="city" name="city" required />
+      </div>
+
+      <div class="form-field">
+        <label for="state">State*</label>
+        <input id="state" name="state" maxlength="2" placeholder="ID, CA, TX..." required />
+      </div>
+
+      <div class="form-field">
+        <label for="zip">ZIP*</label>
+        <input id="zip" name="zip" required />
+      </div>
+
+      <div class="form-field">
+        <label for="unit_count">Number of units</label>
+        <input id="unit_count" name="unit_count" type="number" min="0" />
+      </div>
+
+      <div class="form-field" style="grid-column: 1 / -1;">
+        <label for="notes">Anything we should know?</label>
+        <textarea id="notes" name="notes" placeholder="Renewal date, current carrier, premium, coverage concerns..."></textarea>
+        <div class="helper">The more detail you share, the more precise your quotes can be.</div>
+      </div>
+    </div>
+
+    <!-- Hidden fields for tracking -->
+    <input type="hidden" name="utm_source" id="utm_source" />
+    <input type="hidden" name="utm_medium" id="utm_medium" />
+    <input type="hidden" name="utm_campaign" id="utm_campaign" />
+    <input type="hidden" name="source" value="website" />
+
+    <div style="margin-top: 1rem;">
+      <div style="display:flex; gap:10px;">
+        <button type="button" class="btn btn-secondary" style="flex:1;" id="backBtn">
+          ← Back
+        </button>
+        <button type="submit" class="btn btn-primary" style="flex:2;" id="submitBtn">
+          Get my quotes & coverage review
+        </button>
+      </div>
+
+      <div class="helper" style="margin-top: 0.5rem; font-size: 0.85rem; line-height: 1.35;">
+        By submitting this form, you agree that <strong>The Partners Group LLC</strong> and its insurance partners may
+        contact you by phone, email, and text/SMS regarding your association’s insurance needs, including through
+        automated dialing systems or prerecorded messages. Consent is not a condition of any purchase.
+        Message and data rates may apply. You may opt out at any time.
+        <br><br>
+        View our <a href="/privacy.html" target="_blank">Privacy Policy</a> and
+        <a href="/terms.html" target="_blank">Terms & Conditions</a>.
+      </div>
+    </div>
+  </div>
+</form>
           </div>
         </div>
       </section>
