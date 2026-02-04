@@ -248,7 +248,80 @@
     if (el && params.get(key)) el.value = params.get(key);
   });
 
- 
+  // --- Multi-step form logic ---
+  const step1 = document.getElementById("step1");
+  const step2 = document.getElementById("step2");
+  const nextBtn = document.getElementById("nextBtn");
+  const backBtn = document.getElementById("backBtn");
+  const stepLabel = document.getElementById("stepLabel");
+  const dot1 = document.getElementById("dot1");
+  const dot2 = document.getElementById("dot2");
+
+  function showStep(n) {
+    if (n === 1) {
+      step1.style.display = "";
+      step2.style.display = "none";
+      stepLabel.textContent = "Step 1 of 2 — Contact info";
+      dot1.classList.add("active");
+      dot2.classList.remove("active");
+    } else {
+      step1.style.display = "none";
+      step2.style.display = "";
+      stepLabel.textContent = "Step 2 of 2 — Association details";
+      dot1.classList.remove("active");
+      dot2.classList.add("active");
+    }
+  }
+
+  function validStep1() {
+    const first = document.getElementById("first_name").value.trim();
+    const last = document.getElementById("last_name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    return !!(first && last && email && phone);
+  }
+
+  nextBtn?.addEventListener("click", () => {
+    if (!validStep1()) {
+      alert("Please complete First name, Last name, Email, and Phone to continue.");
+      return;
+    }
+    showStep(2);
+  });
+
+  backBtn?.addEventListener("click", () => showStep(1));
+
+  // Submit to Formspree, then redirect to thank-you page
+  const leadForm = document.getElementById("leadForm");
+  leadForm?.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    if (!leadForm.checkValidity()) {
+      leadForm.reportValidity();
+      return;
+    }
+
+    const formData = new FormData(leadForm);
+
+    try {
+      const res = await fetch(leadForm.action, {
+        method: "POST",
+        body: formData,
+        headers: { "Accept": "application/json" }
+      });
+
+      if (res.ok) {
+        window.location.href = "/thank-you.html";
+      } else {
+        alert("Something went wrong submitting the form. Please try again or call us.");
+      }
+    } catch (err) {
+      alert("Network error. Please try again or call us.");
+    }
+  });
+</script>
+</body>
+</html>
 </script>
 </body>
 </html>
