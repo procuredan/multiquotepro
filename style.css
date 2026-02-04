@@ -256,3 +256,35 @@ footer {
   text-align: center;
   margin-top: auto;
 }
+/* Multi-step form */
+.step-indicator{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin: 0 0 10px;
+}
+.step-dot{
+  width:28px; height:28px;
+  border-radius:999px;
+  border:1px solid #d1d5db;
+  display:grid;
+  place-items:center;
+  font-weight:700;
+  color:#6b7280;
+  background:#fff;
+}
+.step-dot.active{
+  background:#fca311;
+  border-color:#fca311;
+  color:#111827;
+}
+.step-line{
+  flex:1;
+  height:2px;
+  background:#e5e7eb;
+}
+.step-label{
+  font-size:.9rem;
+  color:#4b5563;
+  margin-bottom: 12px;
+}
