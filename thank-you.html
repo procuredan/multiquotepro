@@ -98,6 +98,17 @@
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Personalize with first name (stored from Step 1)
+  try {
+    const stored = sessionStorage.getItem("mqp_first_name");
+    if (stored) {
+      document.getElementById("thankYouHeadline").textContent = `${stored}, thank you.`;
+      document.getElementById("firstName").textContent = stored;
+    }
+  } catch (e) {
+    // do nothing
+  }
 </script>
 </body>
 </html>
