@@ -96,7 +96,7 @@
   document.getElementById('year').textContent = new Date().getFullYear();
 
   // Personalize with first name (stored from Step 1)
-  try {
+ try {
   const stored = sessionStorage.getItem("mqp_first_name");
   if (stored) {
     const name = stored.charAt(0).toUpperCase() + stored.slice(1).toLowerCase();
