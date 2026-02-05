@@ -338,7 +338,7 @@
   const dot1 = document.getElementById("dot1");
   const dot2 = document.getElementById("dot2");
 
-  function showStep(n) {
+   showStep(n) {
   const intro1 = document.getElementById("stepIntro1");
   const intro2 = document.getElementById("stepIntro2");
   const headline = document.getElementById("formHeadline");
@@ -369,7 +369,7 @@
     dot2.classList.add("active");
   }
 }
-function formatPhone(value) {
+ formatPhone(value) {
   const digits = value.replace(/\D/g, "").slice(0, 10);
   const parts = [];
 
@@ -383,13 +383,18 @@ function formatPhone(value) {
 phoneInput?.addEventListener("input", (e) => {
   e.target.value = formatPhone(e.target.value);
 });
- function validStep1() {
-  const first = document.getElementById("first_name").value.trim();
-  const last = document.getElementById("last_name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const phone = document.getElementById("phone").value.replace(/\D/g, "");
+function validStep1() {
+  const first = document.getElementById("first_name");
+  const last = document.getElementById("last_name");
+  const email = document.getElementById("email");
+  const phoneDigits = document.getElementById("phone").value.replace(/\D/g, "");
 
-  return !!(first && last && email && phone.length === 10);
+  if (!first.checkValidity()) return false;
+  if (!last.checkValidity()) return false;
+  if (!email.checkValidity()) return false;
+  if (phoneDigits.length !== 10) return false;
+
+  return true;
 }
 
   nextBtn?.addEventListener("click", () => {
