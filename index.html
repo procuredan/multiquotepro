@@ -370,17 +370,16 @@
     dot2.classList.add("active");
   }
 }
- formatPhone(value) {
+ function formatPhone(value) {
   const digits = value.replace(/\D/g, "").slice(0, 10);
-  const parts = [];
+  if (digits.length === 0) return "";
 
-  if (digits.length > 0) parts.push("(" + digits.slice(0, 3));
-  if (digits.length >= 4) parts[0] += ") " + digits.slice(3, 6);
-  if (digits.length >= 7) parts.push(digits.slice(6, 10));
-
-  return parts.join(digits.length >= 7 ? "-" : "");
+  if (digits.length < 4) return `(${digits}`;
+  if (digits.length < 7) return `(${digits.slice(0,3)}) ${digits.slice(3)}`;
+  return `(${digits.slice(0,3)}) ${digits.slice(3,6)}-${digits.slice(6)}`;
 }
-  const phoneInput = document.getElementById("phone");
+
+const phoneInput = document.getElementById("phone");
 phoneInput?.addEventListener("input", (e) => {
   e.target.value = formatPhone(e.target.value);
 });
