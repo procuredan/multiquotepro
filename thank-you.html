@@ -111,7 +111,18 @@
 
   // Submit callback form to Formspree, then redirect to /thanks.html
   const callbackForm = document.getElementById("callbackForm");
+  
+try {
+  const first = sessionStorage.getItem("mqp_first_name");
+  const last = sessionStorage.getItem("mqp_last_name");
+  const email = sessionStorage.getItem("mqp_email");
+  const phone = sessionStorage.getItem("mqp_phone");
 
+  if (first) document.getElementById("cb_first_name").value = first;
+  if (last) document.getElementById("cb_last_name").value = last;
+  if (email) document.getElementById("cb_email").value = email;
+  if (phone) document.getElementById("cb_phone").value = phone;
+} catch (e) {}
   callbackForm?.addEventListener("submit", async (e) => {
     e.preventDefault();
 
