@@ -398,12 +398,16 @@ function validStep1() {
 }
 
   nextBtn?.addEventListener("click", () => {
-  sessionStorage.setItem("mqp_first_name", document.getElementById("first_name").value.trim());
+  sessionStorage.setItem(
+    "mqp_first_name",
+    document.getElementById("first_name").value.trim()
+  );
 
   if (!validStep1()) {
-    alert("Please enter your name, a valid email, and a 10-digit phone number to continue.");
+    leadForm.reportValidity();
     return;
   }
+
   showStep(2);
 });
 
