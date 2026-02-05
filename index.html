@@ -414,7 +414,6 @@ function validStep1() {
   backBtn?.addEventListener("click", () => showStep(1));
 
   // Submit to Formspree, then redirect to thank-you page
-  const leadForm = document.getElementById("leadForm");
   leadForm?.addEventListener("submit", async (e) => {
     e.preventDefault();
 
