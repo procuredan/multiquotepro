@@ -333,8 +333,11 @@
   function showStep(n) {
   const intro1 = document.getElementById("stepIntro1");
   const intro2 = document.getElementById("stepIntro2");
+  const headline = document.getElementById("formHeadline");
 
   if (n === 1) {
+    // Step 1
+    headline.style.display = "";
     step1.style.display = "";
     step2.style.display = "none";
     stepLabel.textContent = "Step 1 of 2 — Contact info";
@@ -345,6 +348,8 @@
     dot1.classList.add("active");
     dot2.classList.remove("active");
   } else {
+    // Step 2
+    headline.style.display = "none";
     step1.style.display = "none";
     step2.style.display = "";
     stepLabel.textContent = "Step 2 of 2 — Just a bit more info";
