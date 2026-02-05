@@ -14,15 +14,66 @@
     </header>
 
     <main class="section">
-      <div class="card" style="max-width: 620px; margin: 2rem auto;">
-        <h2>Thank you — we’ve received your request.</h2>
+      <div class="card" style="max-width: 680px; margin: 2rem auto;">
+        <h2>Thanks — I got it.</h2>
+
         <p style="margin-top: 0.75rem;">
-          A licensed insurance professional will review your information and reach out with HOA / condo association
-          insurance options and a coverage review.
+          I’m <strong>Brian</strong>. I’ll personally review what you submitted and follow up with any coverage gaps
+          or unnecessary costs I find — free of charge.
         </p>
+
         <p style="margin-top: 0.75rem;">
-          If you have an upcoming renewal, keep an eye on your email and phone so we can make sure quotes are ready in time.
+          <strong>When is the best time for me to personally give you a call?</strong>
         </p>
+
+        <form
+          id="callbackForm"
+          action="https://formspree.io/f/mldqwpjg"
+          method="POST"
+          style="margin-top: 0.75rem;"
+        >
+          <input type="hidden" name="source" value="thank-you-callback" />
+
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="best_time">Best time to call*</label>
+              <input
+                id="best_time"
+                name="best_time"
+                required
+                placeholder="Today after 3pm / Tomorrow 9–11am / etc."
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="timezone">Time zone</label>
+              <input
+                id="timezone"
+                name="timezone"
+                placeholder="PT / MT / CT / ET"
+                maxlength="3"
+              />
+            </div>
+
+            <div class="form-field" style="grid-column: 1 / -1;">
+              <label for="anything_else">Anything else I should know?</label>
+              <textarea
+                id="anything_else"
+                name="anything_else"
+                placeholder="Preferred number if different, renewal date, or quick context"
+              ></textarea>
+              <div class="helper">This goes directly to Brian so he can follow up fast.</div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.9rem;">
+            Send Brian the best time to call
+          </button>
+
+          <div class="helper" style="margin-top: 0.6rem;">
+            Prefer email? Write us at <a href="mailto:hello@multiquotepro.com">hello@multiquotepro.com</a>.
+          </div>
+        </form>
 
         <div style="margin-top: 1.25rem;">
           <a href="/" class="btn btn-secondary">Back to MultiQuotePro</a>
