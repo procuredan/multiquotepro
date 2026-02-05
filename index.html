@@ -383,13 +383,14 @@ function formatPhone(value) {
 phoneInput?.addEventListener("input", (e) => {
   e.target.value = formatPhone(e.target.value);
 });
-  function validStep1() {
-    const first = document.getElementById("first_name").value.trim();
-    const last = document.getElementById("last_name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const phone = document.getElementById("phone").value.trim();
-    return !!(first && last && email && phone);
-  }
+ function validStep1() {
+  const first = document.getElementById("first_name").value.trim();
+  const last = document.getElementById("last_name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const phone = document.getElementById("phone").value.replace(/\D/g, "");
+
+  return !!(first && last && email && phone.length === 10);
+}
 
   nextBtn?.addEventListener("click", () => {
   sessionStorage.setItem("mqp_first_name", document.getElementById("first_name").value.trim());
