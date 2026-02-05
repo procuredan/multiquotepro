@@ -334,20 +334,31 @@
   const dot2 = document.getElementById("dot2");
 
   function showStep(n) {
-    if (n === 1) {
-      step1.style.display = "";
-      step2.style.display = "none";
-      stepLabel.textContent = "Step 1 of 2 — Contact info";
-      dot1.classList.add("active");
-      dot2.classList.remove("active");
-    } else {
-      step1.style.display = "none";
-      step2.style.display = "";
-     stepLabel.textContent = "Step 2 of 2 — Just a bit more info";
-      dot1.classList.remove("active");
-      dot2.classList.add("active");
-    }
+  const intro1 = document.getElementById("stepIntro1");
+  const intro2 = document.getElementById("stepIntro2");
+
+  if (n === 1) {
+    step1.style.display = "";
+    step2.style.display = "none";
+    stepLabel.textContent = "Step 1 of 2 — Contact info";
+
+    intro1.style.display = "";
+    intro2.style.display = "none";
+
+    dot1.classList.add("active");
+    dot2.classList.remove("active");
+  } else {
+    step1.style.display = "none";
+    step2.style.display = "";
+    stepLabel.textContent = "Step 2 of 2 — Just a bit more info";
+
+    intro1.style.display = "none";
+    intro2.style.display = "";
+
+    dot1.classList.remove("active");
+    dot2.classList.add("active");
   }
+}
 
   function validStep1() {
     const first = document.getElementById("first_name").value.trim();
