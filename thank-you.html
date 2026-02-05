@@ -146,10 +146,16 @@ try {
       });
 
       if (res.ok) {
-        // clear personalization after final step
-        try { sessionStorage.removeItem("mqp_first_name"); } catch (e) {}
-        window.location.href = "/thanks.html";
-      } else {
+  // clear saved identity after final step
+  try {
+    sessionStorage.removeItem("mqp_first_name");
+    sessionStorage.removeItem("mqp_last_name");
+    sessionStorage.removeItem("mqp_email");
+    sessionStorage.removeItem("mqp_phone");
+  } catch (e) {}
+  window.location.href = "/thanks.html";
+}
+      else {
         alert("Something went wrong. Please try again or email hello@multiquotepro.com.");
         if (submitBtn) {
           submitBtn.disabled = false;
