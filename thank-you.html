@@ -97,14 +97,15 @@
   document.getElementById('year').textContent = new Date().getFullYear();
 
   // Personalize with first name (stored from Step 1)
- try {
-  const stored = sessionStorage.getItem("mqp_first_name");
-  if (stored) {
-    const name = stored.charAt(0).toUpperCase() + stored.slice(1).toLowerCase();
-    document.getElementById("thankYouHeadline").textContent = `${name}, thank you for reaching out.`;
-    sessionStorage.removeItem("mqp_first_name");
-  }
-} catch (e) {}
+  try {
+    const stored = sessionStorage.getItem("mqp_first_name");
+    if (stored) {
+      const name = stored.charAt(0).toUpperCase() + stored.slice(1).toLowerCase();
+      document.getElementById("thankYouHeadline").textContent = `${name}, thank you for reaching out.`;
+      // Optional: keep it for thanks.html too by NOT removing it yet
+      // sessionStorage.removeItem("mqp_first_name");
+    }
+  } catch (e) {
     // do nothing
   }
 </script>
