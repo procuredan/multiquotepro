@@ -379,6 +379,10 @@ function formatPhone(value) {
 
   return parts.join(digits.length >= 7 ? "-" : "");
 }
+  const phoneInput = document.getElementById("phone");
+phoneInput?.addEventListener("input", (e) => {
+  e.target.value = formatPhone(e.target.value);
+});
   function validStep1() {
     const first = document.getElementById("first_name").value.trim();
     const last = document.getElementById("last_name").value.trim();
