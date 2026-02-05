@@ -342,12 +342,14 @@
   }
 
   nextBtn?.addEventListener("click", () => {
-    if (!validStep1()) {
-      alert("Please complete First name, Last name, Email, and Phone to continue.");
-      return;
-    }
-    showStep(2);
-  });
+  sessionStorage.setItem("mqp_first_name", document.getElementById("first_name").value.trim());
+
+  if (!validStep1()) {
+    alert("Please complete First name, Last name, Email, and Phone to continue.");
+    return;
+  }
+  showStep(2);
+});
 
   backBtn?.addEventListener("click", () => showStep(1));
 
