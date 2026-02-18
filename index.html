@@ -371,9 +371,13 @@
 }
 
 const phoneInput = document.getElementById("phone");
+
 phoneInput?.addEventListener("input", (e) => {
   e.target.value = formatPhone(e.target.value);
 });
+
+// ✅ formats existing value on page load too
+if (phoneInput) phoneInput.value = formatPhone(phoneInput.value);
 function validStep1() {
   const first = document.getElementById("first_name");
   const email = document.getElementById("email");
