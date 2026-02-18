@@ -154,9 +154,9 @@
         <button type="button" class="btn btn-secondary" style="flex:1;" id="backBtn">
           ← Back
         </button>
-        <button type="submit" class="btn btn-primary" style="flex:2;" id="submitBtn">
-          Get my quotes & coverage review
-        </button>
+<button type="submit" class="btn btn-primary">
+  Send My Free Review Request
+</button>
       </div>
 
       <div class="helper" style="margin-top: 0.5rem; font-size: 0.85rem; line-height: 1.35;">
@@ -376,16 +376,15 @@ phoneInput?.addEventListener("input", (e) => {
 });
 function validStep1() {
   const first = document.getElementById("first_name");
-  const last = document.getElementById("last_name");
   const email = document.getElementById("email");
   const phoneDigits = document.getElementById("phone").value.replace(/\D/g, "");
 
   if (!first.checkValidity()) return false;
-  if (!last.checkValidity()) return false;
   if (!email.checkValidity()) return false;
   if (phoneDigits.length !== 10) return false;
 
   return true;
+}
 }
 
  nextBtn?.addEventListener("click", () => {
