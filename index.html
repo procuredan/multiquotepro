@@ -424,6 +424,10 @@ nextBtn.addEventListener("click", () => {
       });
 
       if (res.ok) {
+         // Step 4: fire conversion event
+  try {
+    gtag('event', 'generate_lead');
+  } catch (e) {}
         window.location.href = "/thank-you.html";
       } else {
         alert("Something went wrong submitting the form. Please try again or call us.");
