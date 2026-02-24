@@ -382,29 +382,25 @@ if (phoneInput) phoneInput.value = formatPhone(phoneInput.value);
 function validStep1() {
   const first = document.getElementById("first_name");
   const email = document.getElementById("email");
-  const phoneDigits = document.getElementById("phone").value.replace(/\D/g, "");
+  const phoneEl = document.getElementById("phone");
 
-  if (!first.checkValidity()) return false;
-  if (!email.checkValidity()) return false;
-  if (phoneDigits.length !== 10) return false;
+  // Trigger native validation messages
+  if (!first.checkValidity()) { first.reportValidity(); return false; }
+  if (!email.checkValidity()) { email.reportValidity(); return false; }
+
+  const phoneDigits = (phoneEl.value || "").replace(/\D/g, "");
+  if (phoneDigits.length !== 10) {
+    phoneEl.setCustomValidity("Please enter a 10-digit phone number");
+    phoneEl.reportValidity();
+    phoneEl.setCustomValidity("");
+    return false;
+  }
 
   return true;
 }
 
-nextBtn?.addEventListener("click", () => {
-  // Validate Step 1 first
-  if (!validStep1()) {
-    leadForm.reportValidity();
-    return;
-  }
-
-  // Save only what still exists
-  try {
-    sessionStorage.setItem("mqp_first_name", document.getElementById("first_name").value.trim());
-    sessionStorage.setItem("mqp_email", document.getElementById("email").value.trim());
-    sessionStorage.setItem("mqp_phone", document.getElementById("phone").value.replace(/\D/g, ""));
-  } catch (e) {}
-
+nextBtn.addEventListener("click", () => {
+  if (!validStep1()) return;
   showStep(2);
 });
   backBtn?.addEventListener("click", () => showStep(1));
