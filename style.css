@@ -359,4 +359,14 @@ footer {
   border-radius:999px;
   font-size:.85rem;
   font-weight:600;
+}.section-cta{
+  margin-top:18px;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  flex-wrap:wrap;
+}
+.section-cta .micro-proof{
+  color:#6b7280;
+  font-size:.9rem;
 }
