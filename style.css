@@ -412,3 +412,26 @@ footer {
   border-radius: 12px;
   max-width: 900px;                 /* keeps it from feeling like a site alert */
 }
+/* Testimonials layout fix */
+.testimonials-grid{
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 1.5rem;
+}
+
+.testimonials-grid .section-card{
+  grid-column: span 3;
+}
+
+@media (max-width: 900px){
+  .testimonials-grid .section-card{
+    grid-column: span 6;
+  }
+}
+
+@media (max-width: 640px){
+  .testimonials-grid .section-card{
+    grid-column: span 12;
+  }
+}
