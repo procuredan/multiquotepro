@@ -295,13 +295,13 @@ footer {
   margin: 16px 0 6px 0;
 }
 
-.advisor-photo {
-  width: 60px !important;
-  height: 60px !important;
-  border-radius: 50%;
+.advisor-photo{
+  width: 64px;
+  height: 64px;
+  border-radius: 999px;
   object-fit: cover;
   flex-shrink: 0;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  display: block;
 }
 
 .advisor-name {
