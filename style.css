@@ -226,8 +226,23 @@ select:focus {
 .section-grid {
   margin-top: 1.5rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 1rem;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* Default: 3-up cards like How it works */
+.section-card {
+  grid-column: span 4;
+}
+
+/* Tablet: 2-up */
+@media (max-width: 900px) {
+  .section-card { grid-column: span 6; }
+}
+
+/* Mobile: 1-up */
+@media (max-width: 640px) {
+  .section-card { grid-column: span 12; }
 }
 
 .section-card {
