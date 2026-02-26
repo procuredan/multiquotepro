@@ -446,3 +446,60 @@ footer {
     grid-column: span 12;
   }
 }
+/* ===================================== */
+/* FAQ 2x2 layout fix                    */
+/* ===================================== */
+
+#faq .section-grid{
+  grid-template-columns: repeat(12, 1fr); /* keep base grid */
+}
+
+/* Force FAQ cards into 2 columns */
+#faq .section-card{
+  grid-column: span 6;
+}
+
+@media (max-width: 900px){
+  #faq .section-card{
+    grid-column: span 12;
+  }
+}
+
+
+/* ===================================== */
+/* Final CTA alignment fix               */
+/* ===================================== */
+
+.final-cta{
+  text-align: center;
+  padding: 2.75rem 0;
+}
+
+.final-cta h2{
+  text-align: center;
+  max-width: none;
+  margin-bottom: 1rem;
+}
+
+.final-cta-actions{
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.final-cta .micro-proof{
+  margin: 0;
+}
+
+@media (max-width: 640px){
+  .final-cta-actions{
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .final-cta-actions .btn{
+    width: 100%;
+  }
+}
