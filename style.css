@@ -334,3 +334,13 @@ footer {
   border-radius: 999px;
   margin: 6px 0 12px;
 }
+.risk-highlight{
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #9f1239;
+  background: #fef2f2;
+  padding: 10px 14px;
+  border-left: 4px solid #dc2626;
+  border-radius: 8px;
+  margin: 14px 0 6px;
+}
