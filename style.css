@@ -288,3 +288,27 @@ footer {
   color:#4b5563;
   margin-bottom: 12px;
 }
+.advisor-block {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 16px 0 6px 0;
+}
+
+.advisor-photo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.advisor-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.advisor-title {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
