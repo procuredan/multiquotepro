@@ -296,12 +296,13 @@ footer {
 }
 
 .advisor-photo{
-  width: 44px;
-  height: 44px;
-  border-radius: 999px;
-  object-fit: cover;
-  flex: 0 0 44px;
-  display: block;
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 999px !important;
+  object-fit: cover !important;
+  flex: 0 0 44px !important;
+  display: block !important;
+  max-width: 44px !important;
 }
 
 .advisor-name {
