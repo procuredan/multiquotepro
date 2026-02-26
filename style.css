@@ -378,3 +378,13 @@ footer {
 .section p {
   max-width: 720px;
 }
+/* Section header width control */
+.section h2,
+.section > .wrapper h2 {
+  max-width: 720px;
+}
+
+.section p,
+.section > .wrapper p {
+  max-width: 720px;
+}
