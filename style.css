@@ -344,3 +344,19 @@ footer {
   border-radius: 8px;
   margin: 14px 0 6px;
 }
+.proof-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:14px;
+  margin-bottom:18px;
+}
+.proof-pill{
+  background:#f3f4f6;
+  border:1px solid #e5e7eb;
+  color:#374151;
+  padding:8px 12px;
+  border-radius:999px;
+  font-size:.85rem;
+  font-weight:600;
+}
