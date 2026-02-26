@@ -325,3 +325,12 @@ footer {
   flex: 0 0 44px !important;
   display: block !important;
 }
+.micro-proof{
+  font-size: 0.78rem;
+  color: #6b7280;
+  background: #f3f4f6;
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  margin: 6px 0 12px;
+}
