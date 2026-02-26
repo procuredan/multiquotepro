@@ -403,3 +403,12 @@ footer {
 .section > .wrapper p {
   max-width: 720px;
 }
+.risk-highlight{
+  margin-top: 1.25rem;
+  background: #fff7ed;              /* softer than red */
+  border: 1px solid #fed7aa;
+  color: #9a3412;
+  padding: 0.9rem 1.1rem;
+  border-radius: 12px;
+  max-width: 900px;                 /* keeps it from feeling like a site alert */
+}
