@@ -314,3 +314,14 @@ footer {
   font-size: 0.85rem;
   color: #6b7280;
 }
+/* Force advisor headshot sizing (override any global img rules) */
+.advisor-photo{
+  width: 44px !important;
+  height: 44px !important;
+  max-width: 44px !important;
+  max-height: 44px !important;
+  border-radius: 999px !important;
+  object-fit: cover !important;
+  flex: 0 0 44px !important;
+  display: block !important;
+}
