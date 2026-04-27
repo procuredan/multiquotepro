@@ -443,10 +443,28 @@
     return true;
   }
 
-  nextBtn.addEventListener("click", () => {
-    if (!validStep1()) return;
-    showStep(2);
-  });
+  nextBtn.addEventListener("click", async () => {
+  if (!validStep1()) return;
+
+  const step1Data = new FormData();
+  step1Data.append("lead_stage", "Step 1 - Contact captured");
+  step1Data.append("Name", document.getElementById("name").value.trim());
+  step1Data.append("email", document.getElementById("email").value.trim());
+  step1Data.append("phone", document.getElementById("phone").value.trim());
+  step1Data.append("source", "website-step-1");
+
+  try {
+    await fetch(leadForm.action, {
+      method: "POST",
+      body: step1Data,
+      headers: { "Accept": "application/json" }
+    });
+  } catch (e) {
+    console.log("Step 1 lead capture failed", e);
+  }
+
+  showStep(2);
+});
 
   backBtn?.addEventListener("click", () => showStep(1));
 
