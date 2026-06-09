@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://multiquotepro.com/sitemap.xml

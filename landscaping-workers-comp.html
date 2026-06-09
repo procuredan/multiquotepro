@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Landscaping Workers' Comp Insurance | Compare Quotes | MultiQuotePro</title>
+<title>Landscaping Workers' Comp Insurance | MultiQuotePro</title>
 <meta name="description" content="Compare landscaping workers' compensation insurance quotes from multiple carriers. Coverage for lawn care, landscape install, tree care, and snow removal. Free, fast, no obligation." />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="MultiQuotePro" />
-<meta property="og:title" content="Landscaping Workers' Comp Insurance | Compare Quotes | MultiQuotePro" />
+<meta property="og:title" content="Landscaping Workers' Comp Insurance | MultiQuotePro" />
 <meta property="og:description" content="Compare landscaping workers' compensation insurance quotes from multiple carriers. Coverage for lawn care, landscape install, tree care, and snow removal. Free, fast, no obligation." />
 <meta property="og:url" content="https://multiquotepro.com/landscaping-workers-comp.html" />
 <meta property="og:image" content="https://multiquotepro.com/og.png" />
@@ -16,9 +16,47 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Google tag (gtag.js) — GA4 + Google Ads (standard across all pages) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M279DR51PG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-M279DR51PG');
+  gtag('config', 'AW-17934471659');
+</script>
+<!-- Procure click-source capture: stores gclid/UTM on landing, attaches to the form -->
+<script>
+(function(){
+  try{
+    var qs = new URLSearchParams(window.location.search);
+    var keys = ['gclid','gbraid','wbraid','utm_source','utm_medium','utm_campaign','utm_term','utm_content'];
+    var store = {};
+    try{ var c=(document.cookie.match(/(?:^|; )pm_attr=([^;]*)/)||[])[1]; if(c) store=JSON.parse(decodeURIComponent(c))||{}; }catch(e){ store={}; }
+    var got=false;
+    keys.forEach(function(k){ var v=qs.get(k); if(v){ store[k]=v; got=true; } });
+    if(got || !store.landing){
+      if(!store.landing) store.landing=window.location.pathname;
+      if(!store.referrer) store.referrer=document.referrer||'';
+      document.cookie='pm_attr='+encodeURIComponent(JSON.stringify(store))+'; path=/; max-age=7776000; SameSite=Lax';
+    }
+    function fill(){
+      var f=document.querySelector('form'); if(!f) return;
+      Object.keys(store).forEach(function(k){
+        if(store[k] && !f.querySelector('[name="'+k+'"]')){
+          var i=document.createElement('input'); i.type='hidden'; i.name=k; i.value=store[k]; f.appendChild(i);
+        }
+      });
+    }
+    if(document.readyState!=='loading') fill(); else document.addEventListener('DOMContentLoaded', fill);
+  }catch(e){}
+})();
+</script>
 <style>
 :root{
   --navy:#0B3558;--navy-dark:#07253D;--gold:#F4A621;--gold-dark:#D88D13;
+  --accent:#F4A621;--accent-dark:#D88D13;
   --light:#F7F9FC;--text:#142132;--muted:#6E7A8A;--line:#E5EBF2;
   --radius:18px;--shadow:0 12px 30px rgba(0,0,0,.08);--container:1180px;
 }
@@ -33,13 +71,13 @@ img{max-width:100%;}
 .nav-inner{height:82px;display:flex;align-items:center;justify-content:space-between;}
 .logo{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--navy);font-size:22px;}
 .logo-box{width:42px;height:42px;border-radius:10px;background:var(--navy);display:flex;align-items:center;justify-content:center;color:var(--gold);}
-.logo-box svg{width:24px;height:24px;}
+.logo-box svg{width:25px;height:25px;}
 .nav-right{display:flex;align-items:center;gap:22px;}
 .nav-phone{font-weight:800;color:var(--navy);font-size:17px;white-space:nowrap;}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 28px;border-radius:12px;font-weight:800;transition:.2s ease;cursor:pointer;border:none;}
-.btn-primary{background:var(--gold);color:#111;}
-.btn-primary:hover{background:var(--gold-dark);transform:translateY(-2px);}
-.hero{background:radial-gradient(1100px 480px at 78% -10%, rgba(244,166,33,.16), transparent 60%), linear-gradient(160deg,var(--navy) 0%, var(--navy-dark) 100%);color:#fff;padding:90px 0;}
+.btn-primary{background:var(--accent);color:#fff;}
+.btn-primary:hover{background:var(--accent-dark);transform:translateY(-2px);}
+.hero{background:radial-gradient(1100px 480px at 78% -10%, rgba(0,0,0,.10), transparent 60%), linear-gradient(160deg,var(--navy) 0%, var(--navy-dark) 100%);color:#fff;padding:90px 0;}
 .hero-grid{display:grid;grid-template-columns:1fr .95fr;gap:56px;align-items:center;}
 .eyebrow{display:inline-block;background:rgba(244,166,33,.16);color:var(--gold);padding:8px 16px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;}
 .hero-title{font-size:clamp(38px,4.6vw,60px);line-height:1.08;font-weight:800;letter-spacing:-1.5px;margin:22px 0;max-width:720px;}
@@ -50,9 +88,11 @@ img{max-width:100%;}
 .hero-points div{display:flex;align-items:flex-start;gap:12px;color:#fff;font-size:16px;}
 .hero-points span{color:var(--gold);font-weight:800;}
 .trust-line{margin:8px 0 26px;font-size:14px;color:#C7D8E7;font-weight:500;}
-.form-card{background:#fff;border-radius:var(--radius);padding:32px;box-shadow:var(--shadow);color:var(--text);}
-.form-card h3{font-size:27px;margin-bottom:10px;line-height:1.1;}
-.form-card > p{color:var(--muted);font-size:15px;margin-bottom:16px;}
+.form-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);color:var(--text);overflow:hidden;}
+.form-head{background:var(--accent);color:#fff;padding:24px 32px;}
+.form-head h3{font-size:25px;line-height:1.12;margin-bottom:6px;color:#fff;}
+.form-head p{color:rgba(255,255,255,.9);font-size:14px;}
+.form-body{padding:28px 32px 32px;}
 .form-stats{display:flex;border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:20px;}
 .form-stat{flex:1;text-align:center;padding:10px 8px;border-right:1px solid var(--line);}
 .form-stat:last-child{border-right:none;}
@@ -74,7 +114,7 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--navy);}
 .tcpa a{color:#7B8794;text-decoration:underline;}
 .stats{background:var(--navy);padding:40px 0;}
 .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;text-align:center;}
-.stat h2{color:#fff;font-size:40px;font-weight:800;}
+.stat h2{color:#fff;font-size:38px;font-weight:800;}
 .stat h2 span{color:var(--gold);}
 .stat p{color:#BFD0E0;text-transform:uppercase;letter-spacing:1px;font-size:12px;font-weight:700;margin-top:8px;}
 .section{padding:90px 0;}
@@ -114,6 +154,20 @@ footer h4{color:#fff;margin-bottom:18px;}
 footer a{color:#A7BED1;display:block;margin-bottom:12px;}
 .footer-disclaimer{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;font-size:12px;line-height:1.6;color:#7B92A6;margin-bottom:18px;}
 .footer-bottom{font-size:13px;}
+.article{max-width:820px;margin:0 auto;padding:70px 0;}
+.article h1{font-size:clamp(30px,4vw,46px);color:var(--navy);line-height:1.12;margin-bottom:18px;}
+.article .lede{font-size:19px;color:var(--muted);margin-bottom:30px;}
+.article h2{color:var(--navy);font-size:26px;margin:34px 0 12px;}
+.article p{color:#39485B;font-size:17px;margin-bottom:16px;}
+.article .back{display:inline-block;margin-top:30px;font-weight:700;color:var(--accent);}
+.legal{max-width:820px;margin:0 auto;padding:70px 0;}
+.legal h1{font-size:38px;color:var(--navy);margin-bottom:10px;}
+.legal h2{color:var(--navy);font-size:22px;margin:28px 0 10px;}
+.legal p{color:#39485B;margin-bottom:14px;}
+.thanks{max-width:680px;margin:0 auto;padding:110px 24px;text-align:center;}
+.thanks .badge{width:84px;height:84px;border-radius:50%;background:rgba(244,166,33,.15);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:40px;margin:0 auto 26px;}
+.thanks h1{font-size:40px;color:var(--navy);margin-bottom:16px;}
+.thanks p{font-size:19px;color:var(--muted);margin-bottom:14px;}
 @media(max-width:980px){
 .hero-grid,.review-grid,.how-grid,.footer-grid,.stats-grid,.seg-grid{grid-template-columns:1fr;}
 .form-grid{grid-template-columns:1fr;}
@@ -127,58 +181,78 @@ footer a{color:#A7BED1;display:block;margin-bottom:12px;}
 </style>
 </head>
 <body>
-<div class="top-bar">Compare workers' compensation insurance quotes for your business &#8212; fast, free, and no obligation.</div>
-<header class="nav"><div class="container nav-inner">
-<a href="/" class="logo"><div class="logo-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>MultiQuotePro</a>
-<div class="nav-right"><a href="tel:18555550123" class="nav-phone">(855) 555-0123</a><a href="#form" class="btn btn-primary">Compare Quotes &#8594;</a></div>
-</div></header>
-<section class="hero"><div class="container hero-grid">
+<div class="top-bar">Compare workers' compensation insurance quotes for your business — fast, free, and no obligation.</div>
+
+<header class="nav">
+<div class="container nav-inner">
+<a href="/" class="logo">
+<div class="logo-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+MultiQuotePro
+</a>
+<div class="nav-right">
+<a href="tel:18555550123" class="nav-phone">(855) 555-0123</a>
+<a href="#form" class="btn btn-primary">Compare My Quotes →</a>
+</div>
+</div>
+</header>
+
+<section class="hero">
+<div class="container hero-grid">
 <div>
 <div class="eyebrow">Landscaping Workers' Comp Quotes</div>
 <h1 class="hero-title">Compare <span class="highlight">Landscaping Workers' Comp</span> Quotes.</h1>
-<p>Outdoor labor, mowers, blades, and heavy equipment make landscaping a frequent-claim class &#8212; and seasonal payroll complicates pricing. We compare multiple markets to find the right coverage at the right price.</p>
+<p>Outdoor labor, mowers, blades, and heavy equipment make landscaping a frequent-claim class — and seasonal payroll complicates pricing. We compare multiple markets to find the right coverage at the right price.</p>
 <p class="mini-proof">For lawn care, landscape design and install, hardscaping, tree care, irrigation, and snow removal.</p>
-<div class="hero-points"><div><span>&#10003;</span> Compare carriers that specialize in landscaping class codes</div><div><span>&#10003;</span> Seasonal and fluctuating payroll handled correctly</div><div><span>&#10003;</span> Tree care and higher-risk work placed with the right markets</div><div><span>&#10003;</span> Free, fast, and no obligation</div></div>
-<p class="trust-line">Workers' comp for solo crews up to multi-truck landscaping operations.</p>
-<a href="#form" class="btn btn-primary">Compare My Quotes &#8594;</a>
+<div class="hero-points">
+<div><span>✓</span> Compare multiple carriers in one quick request</div>
+<div><span>✓</span> Stop overpaying — workers' comp rates aren't all the same</div>
+<div><span>✓</span> New ventures, shopping, and lapsed coverage welcome</div>
+<div><span>✓</span> Free, fast, and no obligation</div>
 </div>
+<p class="trust-line">Coverage compared for businesses of every size, from 1 employee to 500+.</p>
+<a href="#form" class="btn btn-primary">Compare My Quotes →</a>
+</div>
+
 <div class="form-card" id="form">
+<div class="form-head">
 <h3>Compare Your Landscaping Workers' Comp Quotes</h3>
-<p>Submit the basics below. A workers' comp specialist follows up with competitive options &#8212; no obligation.</p>
+<p>Submit the basics below. A workers' comp specialist follows up with competitive options — no obligation.</p>
+</div>
+<div class="form-body">
 <div class="form-stats">
-<div class="form-stat"><strong>$0</strong><span>To Compare</span></div>
-<div class="form-stat"><strong>Multiple</strong><span>Carriers</span></div>
-<div class="form-stat"><strong>All</strong><span>Industries</span></div>
-<div class="form-stat"><strong>Fast</strong><span>Turnaround</span></div>
+  <div class="form-stat"><strong>$0</strong><span>To Compare</span></div>
+  <div class="form-stat"><strong>Multiple</strong><span>Carriers</span></div>
+  <div class="form-stat"><strong>All</strong><span>Industries</span></div>
+  <div class="form-stat"><strong>Fast</strong><span>Turnaround</span></div>
 </div>
 <form action="https://procure-lead-engine.dan-fda.workers.dev/submit" method="POST">
   <input type="hidden" name="lead_source" value="multiquotepro.com/landscaping-workers-comp" />
   <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true" />
+  <input type="hidden" name="site" value="multiquotepro.com" />
   <input type="hidden" name="vertical" value="Workers Compensation Insurance" />
   <input type="hidden" name="_redirect" value="https://multiquotepro.com/thank-you.html" />
-
 <div class="form-grid">
-<div>
+<div class="">
 <label class="field-label" for="first_name">First Name</label>
 <input id="first_name" type="text" name="first_name" autocomplete="given-name" required>
 </div>
-<div>
+<div class="">
 <label class="field-label" for="last_name">Last Name</label>
 <input id="last_name" type="text" name="last_name" autocomplete="family-name" required>
 </div>
-<div>
+<div class="">
 <label class="field-label" for="phone">Phone</label>
 <input id="phone" type="tel" name="phone" placeholder="(555) 555-5555" autocomplete="tel" inputmode="tel" pattern="[\d\s\-\(\)\.]{10,20}" required>
 </div>
-<div>
+<div class="">
 <label class="field-label" for="email">Email</label>
 <input id="email" type="email" name="email" autocomplete="email" required>
 </div>
 <div class="full">
 <label class="field-label" for="company">Business Name</label>
-<input id="company" type="text" name="company" autocomplete="organization" placeholder="Optional">
+<input id="company" type="text" name="company" placeholder="Optional" autocomplete="organization">
 </div>
-<div>
+<div class="">
 <label class="field-label" for="industry">Industry</label>
 <select id="industry" name="industry" required>
 <option value="">Select one</option>
@@ -195,7 +269,7 @@ footer a{color:#A7BED1;display:block;margin-bottom:12px;}
 <option>Other</option>
 </select>
 </div>
-<div>
+<div class="">
 <label class="field-label" for="employees">Employees</label>
 <select id="employees" name="employees" required>
 <option value="">Select one</option>
@@ -207,9 +281,9 @@ footer a{color:#A7BED1;display:block;margin-bottom:12px;}
 <option>100+</option>
 </select>
 </div>
-<div>
-<label class="field-label" for="payroll">Annual Payroll</label>
-<select id="payroll" name="annual_payroll">
+<div class="">
+<label class="field-label" for="annual_payroll">Annual Payroll</label>
+<select id="annual_payroll" name="annual_payroll">
 <option value="">Select one</option>
 <option>Under $250k</option>
 <option>$250k–$500k</option>
@@ -218,11 +292,11 @@ footer a{color:#A7BED1;display:block;margin-bottom:12px;}
 <option>$5M+</option>
 </select>
 </div>
-<div>
+<div class="">
 <label class="field-label" for="state">State</label>
 <input id="state" type="text" name="state" placeholder="e.g. CA" autocomplete="address-level1">
 </div>
-<div>
+<div class="">
 <label class="field-label" for="current_coverage">Current Coverage</label>
 <select id="current_coverage" name="current_coverage">
 <option value="">Select one</option>
@@ -231,14 +305,12 @@ footer a{color:#A7BED1;display:block;margin-bottom:12px;}
 <option>Coverage lapsed / cancelled</option>
 </select>
 </div>
-<div>
+<div class="">
 <label class="field-label" for="renewal_date">Renewal Date</label>
 <input id="renewal_date" type="date" name="renewal_date">
 </div>
 <div class="full">
-<p style="font-weight:700; color:#142132; margin:4px 0 14px; font-size:16px;">
-Most businesses that compare find a lower workers' comp rate — same coverage, less money.
-</p>
+<p style="font-weight:700; color:#142132; margin:4px 0 14px; font-size:16px;">Most businesses that compare find a lower workers' comp rate — same coverage, less money.</p>
 <button class="btn btn-primary submit-btn" type="submit">Compare My Quotes →</button>
 <div class="trust-strip"><span class="tbadge">🔒 SSL Secured</span><span class="tbadge">✓ TCPA-Compliant Consent</span><span class="tbadge">🚫 Never Sold or Shared</span><span class="tbadge">✓ Free &amp; No Obligation</span></div>
 <p class="secondary-label">Want quotes on other coverage too?</p>
@@ -250,57 +322,246 @@ Most businesses that compare find a lower workers' comp rate — same coverage, 
 </div>
 </div>
 </div>
-<div class="tcpa">
-By clicking "Compare My Quotes," you agree to be contacted by The Partners Group and its representatives via phone call, text message, and email regarding workers' compensation and related insurance products or services using automated technology at the contact information provided, even if your number is listed on a state or federal Do Not Call list. Consent is not a condition of purchase. Message and data rates may apply. View our <a href="/privacy-policy.html" target="_blank">Privacy Policy</a>.
-</div>
+<div class="tcpa">By clicking "Compare My Quotes," you agree to be contacted by The Partners Group and its representatives via phone call, text message, and email regarding workers' compensation and related insurance products or services using automated technology at the contact information provided, even if your number is listed on a state or federal Do Not Call list. Consent is not a condition of purchase. Message and data rates may apply. View our <a href="/privacy-policy.html" target="_blank">Privacy Policy</a>.</div>
 </form>
 </div>
-</div></section>
-<section class="stats"><div class="container stats-grid">
+</div>
+</div>
+</section>
+
+<section class="stats">
+<div class="container stats-grid">
 <div class="stat"><h2><span>$0</span></h2><p>Cost To Compare Quotes</p></div>
 <div class="stat"><h2><span>Multiple</span></h2><p>Carriers Compared</p></div>
 <div class="stat"><h2><span>All</span></h2><p>Industries &amp; Class Codes</p></div>
-<div class="stat"><h2><span>1&#8211;500+</span></h2><p>Employees Covered</p></div>
-</div></section>
-<section class="section" id="why"><div class="container">
-<div class="section-head"><div class="eyebrow">Why Compare</div><h2>Same coverage. Very different prices.</h2>
-<p>Carriers price landscaping workers' comp differently &#8212; comparing multiple markets is the only way to know you're not overpaying.</p></div>
-<div class="review-grid"><div class="review-card"><div class="review-icon">&#9878;</div><h3>Rates Vary By Carrier</h3><p>Landscaping rates differ widely by carrier and the work you do. Comparing finds your best price.</p></div><div class="review-card"><div class="review-icon">&#127795;</div><h3>Tree Care &amp; Heights</h3><p>Arborist and tree work is rated higher &#8212; we place it with markets that write it competitively.</p></div><div class="review-card"><div class="review-icon">&#128201;</div><h3>Experience Mod Review</h3><p>Fewer claims should mean a lower rate. We shop carriers that reward a clean record.</p></div><div class="review-card"><div class="review-icon">&#128181;</div><h3>Pay-As-You-Go</h3><p>Payroll-based billing smooths seasonal cash flow and reduces audit surprises.</p></div></div>
-</div></section>
-<section class="section how-section"><div class="container">
-<div class="section-head"><div class="eyebrow">Who We Help</div><h2>Coverage tuned to your operation.</h2></div>
-<div class="seg-grid"><div class="seg-item"><span class="check">&#10003;</span><div><strong>Lawn Care &amp; Maintenance</strong><span>Mowing, maintenance, and grounds care.</span></div></div><div class="seg-item"><span class="check">&#10003;</span><div><strong>Landscape Design &amp; Install</strong><span>Design, planting, and installation crews.</span></div></div><div class="seg-item"><span class="check">&#10003;</span><div><strong>Hardscaping</strong><span>Pavers, retaining walls, and masonry.</span></div></div><div class="seg-item"><span class="check">&#10003;</span><div><strong>Tree Care / Arborists</strong><span>Trimming, removal, and arborist work.</span></div></div><div class="seg-item"><span class="check">&#10003;</span><div><strong>Irrigation</strong><span>Irrigation install and repair.</span></div></div><div class="seg-item"><span class="check">&#10003;</span><div><strong>Snow Removal</strong><span>Seasonal plowing and ice management.</span></div></div></div>
-</div></section>
-<section class="section"><div class="container">
-<div class="section-head"><div class="eyebrow">How It Works</div>
+<div class="stat"><h2><span>1–500+</span></h2><p>Employees Covered</p></div>
+</div>
+</section>
+
+<section class="section" id="services">
+<div class="container">
+<div class="section-head">
+<div class="eyebrow">Why Compare</div>
+<h2>Same coverage. Very different prices.</h2>
+<p>Two carriers can quote the same business wildly different rates for identical workers' comp coverage. Comparing is the only way to know you're not overpaying.</p>
+</div>
+<div class="review-grid">
+<div class="review-card">
+<div class="review-icon">⚖️</div>
+<h3>Rates Vary By Carrier</h3>
+<p>Each carrier prices class codes differently. The right market for your industry can save you thousands a year.</p>
+</div>
+<div class="review-card">
+<div class="review-icon">🏷️</div>
+<h3>Right Class Codes</h3>
+<p>Misclassified employees inflate your premium. We help make sure your business is rated correctly.</p>
+</div>
+<div class="review-card">
+<div class="review-icon">📉</div>
+<h3>Experience Mod Review</h3>
+<p>Your mod factor drives your price. We review it and shop carriers that reward your safety record.</p>
+</div>
+<div class="review-card">
+<div class="review-icon">🧾</div>
+<h3>Pay-As-You-Go Options</h3>
+<p>Payroll-based billing can improve cash flow and reduce audit surprises. We compare options that offer it.</p>
+</div>
+<div class="review-card">
+<div class="review-icon">🆕</div>
+<h3>New &amp; Hard-To-Place</h3>
+<p>New ventures, lapsed coverage, and higher-risk class codes — we work markets that write them.</p>
+</div>
+<div class="review-card">
+<div class="review-icon">⚡</div>
+<h3>Fast, No-Obligation</h3>
+<p>One short request gets you competitive quotes. No giant application, no pressure to switch.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section how-section">
+<div class="container">
+<div class="section-head">
+<div class="eyebrow">Who We Help</div>
+<h2>Workers' comp for every kind of business.</h2>
+<p>Rates and class codes differ by industry — so we shop the carriers that fit yours.</p>
+</div>
+<div class="seg-grid">
+<div class="seg-item"><span class="check">✓</span><div><strong>Construction &amp; contractors</strong><span>General, trades, and subcontractors of every size.</span></div></div>
+<div class="seg-item"><span class="check">✓</span><div><strong>Restaurants &amp; hospitality</strong><span>Restaurants, bars, cafes, and food service.</span></div></div>
+<div class="seg-item"><span class="check">✓</span><div><strong>Retail &amp; office</strong><span>Shops, offices, and professional services.</span></div></div>
+<div class="seg-item"><span class="check">✓</span><div><strong>Manufacturing &amp; trades</strong><span>Manufacturing, landscaping, cleaning, and auto.</span></div></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="section-head">
+<div class="eyebrow">How It Works</div>
 <h2>Three steps. About two minutes to start.</h2>
-<p>You send the basics. We compare carriers and bring back competitive workers' comp options.</p></div>
+<p>You send the basics. We compare carriers and bring back competitive workers' comp options.</p>
+</div>
 <div class="how-grid">
-<div class="how-card"><div class="step-badge">01</div><div class="how-icon">&#128221;</div><h3>Tell us about your business</h3><p>Industry, employees, payroll, state, and renewal date. No giant application to begin.</p></div>
-<div class="how-card"><div class="step-badge">02</div><div class="how-icon">&#128269;</div><h3>We compare carriers</h3><p>A specialist reviews your class codes, mod, and risk and shops competitive markets.</p></div>
-<div class="how-card"><div class="step-badge">03</div><div class="how-icon">&#9989;</div><h3>You pick the best quote</h3><p>Compare options side by side and choose the coverage and price that fit &#8212; no obligation.</p></div>
-</div></div></section>
-<section class="section how-section"><div class="container">
-<div class="section-head"><div class="eyebrow">Common Questions</div><h2>Landscaping Workers' Comp FAQ</h2></div>
-<div class="faq"><div class="faq-item"><h3>Is workers' comp required for landscaping businesses?</h3><p>Nearly every state requires workers' comp once you have employees. Rules vary by state and employee count.</p></div><div class="faq-item"><h3>How is landscaping workers' comp priced?</h3><p>Mainly on payroll, class codes (including higher-risk tree work), claims history, and state rates &#8212; all of which differ by carrier, so comparing pays off.</p></div><div class="faq-item"><h3>How is seasonal payroll handled?</h3><p>Many carriers offer pay-as-you-go billing tied to actual payroll, which helps seasonal businesses avoid large audits. We compare options that offer it.</p></div><div class="faq-item"><h3>How can I lower my landscaping workers' comp cost?</h3><p>Accurate class codes, a clean claims record, safety practices, and comparing multiple carriers are the biggest levers.</p></div></div>
-</div></section>
-<section class="final-cta"><div class="container"><div class="cta-box">
-<div class="eyebrow">Free &#8226; Fast &#8226; No Obligation</div>
+<div class="how-card">
+<div class="step-badge">01</div>
+<div class="how-icon">📝</div>
+<h3>Tell us about your business</h3>
+<p>Industry, employees, payroll, state, and renewal date. No giant application to begin.</p>
+</div>
+<div class="how-card">
+<div class="step-badge">02</div>
+<div class="how-icon">🔍</div>
+<h3>We compare carriers</h3>
+<p>A workers' comp specialist reviews your class codes, mod, and risk and shops competitive markets.</p>
+</div>
+<div class="how-card">
+<div class="step-badge">03</div>
+<div class="how-icon">✅</div>
+<h3>You pick the best quote</h3>
+<p>Compare your options side by side and choose the coverage and price that fit — no obligation.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section how-section">
+<div class="container">
+<div class="section-head">
+<div class="eyebrow">Common Questions</div>
+<h2>Landscaping Workers' Comp FAQ</h2>
+</div>
+<div class="faq">
+<div class="faq-item">
+<h3>Is workers' comp required for landscaping businesses?</h3>
+<p>Nearly every state requires workers' comp once you have employees. Rules vary by state and employee count.</p>
+</div>
+<div class="faq-item">
+<h3>How is landscaping workers' comp priced?</h3>
+<p>Mainly on payroll, class codes (including higher-risk tree work), claims history, and state rates — all of which differ by carrier, so comparing pays off.</p>
+</div>
+<div class="faq-item">
+<h3>How is seasonal payroll handled?</h3>
+<p>Many carriers offer pay-as-you-go billing tied to actual payroll, which helps seasonal businesses avoid large audits. We compare options that offer it.</p>
+</div>
+<div class="faq-item">
+<h3>How can I lower my landscaping workers' comp cost?</h3>
+<p>Accurate class codes, a clean claims record, safety practices, and comparing multiple carriers are the biggest levers.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="final-cta">
+<div class="container">
+<div class="cta-box">
+<div class="eyebrow">Free • Fast • No Obligation</div>
 <h2>Compare Landscaping Workers' Comp Quotes Today</h2>
 <p>See if you're overpaying. One quick request and a specialist brings back competitive options from multiple carriers.</p>
-<a href="#form" class="btn btn-primary">Compare My Quotes &#8594;</a>
-</div></div></section>
-<footer id="contact"><div class="container"><div class="footer-grid">
-<div><div class="logo" style="color:#fff;margin-bottom:20px"><div class="logo-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>MultiQuotePro</div>
-<p>Compare workers' compensation insurance quotes from multiple carriers &#8212; free, fast, and no obligation.</p></div>
-<div><h4>Industries</h4><a href="/construction-workers-comp.html">Construction</a><a href="/restaurant-workers-comp.html">Restaurants</a><a href="/trucking-workers-comp.html">Trucking</a><a href="/landscaping-workers-comp.html">Landscaping</a><a href="/cleaning-workers-comp.html">Cleaning &amp; Janitorial</a><a href="/small-business-workers-comp.html">Small Business</a></div>
-<div><h4>Workers' Comp</h4><a href="/#why">Why Compare</a><a href="/#how">How It Works</a><a href="/#form">Get Quotes</a></div>
-<div><h4>Contact</h4><a href="tel:18555550123">(855) 555-0123</a><a href="mailto:quotes@multiquotepro.com">quotes@multiquotepro.com</a><a href="/privacy-policy.html">Privacy Policy</a><a href="/terms.html">Terms &amp; Conditions</a></div>
+<a href="#form" class="btn btn-primary">Compare My Quotes →</a>
+</div>
+</div>
+</section>
+
+<footer id="contact">
+<div class="container">
+<div class="footer-grid">
+<div>
+<div class="logo" style="color:#fff;margin-bottom:20px">
+<div class="logo-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+MultiQuotePro
+</div>
+<p>Compare workers' compensation insurance quotes from multiple carriers — free, fast, and no obligation.</p>
+</div>
+<div>
+<h4>Industries</h4>
+<a href="/construction-workers-comp.html">Construction</a>
+<a href="/restaurant-workers-comp.html">Restaurants</a>
+<a href="/trucking-workers-comp.html">Trucking</a>
+<a href="/landscaping-workers-comp.html">Landscaping</a>
+<a href="/cleaning-workers-comp.html">Cleaning &amp; Janitorial</a>
+<a href="/small-business-workers-comp.html">Small Business</a>
+</div>
+<div>
+<h4>Workers' Comp</h4>
+<a href="/#services">Why Compare</a>
+<a href="/#services">How It Works</a>
+<a href="/#form">Get Quotes</a>
+</div>
+<div>
+<h4>Contact</h4>
+<a href="tel:18555550123">(855) 555-0123</a>
+<a href="mailto:quotes@multiquotepro.com">quotes@multiquotepro.com</a>
+<a href="/privacy-policy.html">Privacy Policy</a>
+<a href="/terms.html">Terms &amp; Conditions</a>
+</div>
 </div>
 <div class="footer-disclaimer">This website is for lead generation and referral purposes. Workers' compensation availability, eligibility, terms, and pricing vary by carrier, state, class code, and underwriting review. Submitting a request does not bind, alter, or guarantee coverage.</div>
-<div class="footer-bottom">&#169; 2026 MultiQuotePro. All rights reserved.</div>
-</div></footer>
+<div class="footer-bottom">© 2026 MultiQuotePro. All rights reserved.</div>
+</div>
+</footer>
+
 <script>
-document.addEventListener("DOMContentLoaded",function(){var p=document.querySelector('input[name="phone"]');if(p){p.addEventListener("input",function(e){var v=e.target.value.replace(/\D/g,"").slice(0,10);if(v.length>6){e.target.value="("+v.slice(0,3)+") "+v.slice(3,6)+"-"+v.slice(6);}else if(v.length>3){e.target.value="("+v.slice(0,3)+") "+v.slice(3);}else if(v.length>0){e.target.value="("+v;}});}});
+document.addEventListener("DOMContentLoaded", function () {
+  const phoneInput = document.querySelector('input[name="phone"]');
+  if (phoneInput) {
+    phoneInput.addEventListener("input", function (e) {
+      let value = e.target.value.replace(/\D/g, "");
+      if (value.charAt(0) === "1") value = value.slice(1); // strip US country code — no area code starts with 1
+      value = value.slice(0, 10);
+      if (value.length > 6) {
+        e.target.value = `(${value.slice(0, 3)}) ${value.slice(3, 6)}-${value.slice(6)}`;
+      } else if (value.length > 3) {
+        e.target.value = `(${value.slice(0, 3)}) ${value.slice(3)}`;
+      } else if (value.length > 0) {
+        e.target.value = `(${value}`;
+      }
+    });
+  }
+});
 </script>
-</body></html>
+<!-- Procure form analytics — GA4 funnel events (no PII to GA) + partial capture to separate DB -->
+<script>
+(function(){
+  var form = document.querySelector('form'); if(!form) return;
+  var ENDPOINT = 'https://procure-lead-engine.dan-fda.workers.dev/partial';
+  var SITE = 'multiquotepro.com';
+  var SKIP = {_gotcha:1,_redirect:1,site:1,lead_source:1,vertical:1,pm_sid:1,gclid:1,gbraid:1,wbraid:1,utm_source:1,utm_medium:1,utm_campaign:1,utm_term:1,utm_content:1};
+  var FIELDS = [];
+  Array.prototype.forEach.call(form.querySelectorAll('[name]'), function(el){
+    var n=el.name; if(!n||SKIP[n]||el.type==='hidden') return; if(FIELDS.indexOf(n)<0) FIELDS.push(n);
+  });
+  var sid;
+  try { sid = sessionStorage.getItem('pm_sid'); if(!sid){ sid = (window.crypto && crypto.randomUUID ? crypto.randomUUID() : (Date.now()+'-'+Math.random())); sessionStorage.setItem('pm_sid', sid); } }
+  catch(e){ sid = Date.now()+'-'+Math.random(); }
+  var attr = {};
+  try { var c=(document.cookie.match(/(?:^|; )pm_attr=([^;]*)/)||[])[1]; if(c) attr=JSON.parse(decodeURIComponent(c))||{}; } catch(e){}
+  if(!form.querySelector('[name="pm_sid"]')){ var h=document.createElement('input'); h.type='hidden'; h.name='pm_sid'; h.value=sid; form.appendChild(h); }
+  var started=false, reached={}, lastField='', t=null;
+  function v(n){ var el=form.querySelector('[name="'+n+'"]'); return el ? (el.value||'').trim() : ''; }
+  function fullname(){ return v('name') || [v('first_name'),v('last_name')].filter(Boolean).join(' '); }
+  function extra(){ var o={}, core={first_name:1,last_name:1,name:1,email:1,phone:1,association:1,community_size:1,role:1};
+    FIELDS.forEach(function(n){ if(!core[n]){ var val=v(n); if(val) o[n]=val; } }); return JSON.stringify(o); }
+  function snap(sub){ return {
+    session_id:sid, site:SITE, last_field:lastField, fields_reached:Object.keys(reached).length, submitted:sub?1:0,
+    name:fullname(), email:v('email'), phone:v('phone'),
+    association:v('association'), community_size:v('community_size'), role:v('role'), extra:extra(),
+    gclid:attr.gclid||'', utm_source:attr.utm_source||'', utm_medium:attr.utm_medium||'', utm_campaign:attr.utm_campaign||'',
+    utm_term:attr.utm_term||'', utm_content:attr.utm_content||'', landing:attr.landing||'', referrer:attr.referrer||'' }; }
+  function beacon(sub){ try{ var b=new Blob([JSON.stringify(snap(sub))],{type:'text/plain'});
+    if(navigator.sendBeacon) navigator.sendBeacon(ENDPOINT,b); else fetch(ENDPOINT,{method:'POST',body:JSON.stringify(snap(sub)),mode:'no-cors',keepalive:true}); }catch(e){} }
+  function ga(n,p){ try{ if(window.gtag) gtag('event',n,p||{}); }catch(e){} }
+  form.addEventListener('focusin', function(){ if(!started){ started=true; ga('form_start',{form:SITE}); beacon(false); } });
+  FIELDS.forEach(function(n,idx){ var el=form.querySelector('[name="'+n+'"]'); if(!el) return;
+    function mark(){ if(v(n) && !reached[n]){ reached[n]=true; lastField=n; ga('form_progress',{field_name:n, step:idx+1}); } }
+    el.addEventListener('blur', function(){ mark(); clearTimeout(t); t=setTimeout(function(){ beacon(false); },400); });
+    el.addEventListener('change', function(){ mark(); beacon(false); });
+  });
+  form.addEventListener('submit', function(){ beacon(true); });
+  window.addEventListener('pagehide', function(){ if(started) beacon(false); });
+  document.addEventListener('visibilitychange', function(){ if(document.visibilityState==='hidden' && started) beacon(false); });
+})();
+</script>
+</body>
+</html>
