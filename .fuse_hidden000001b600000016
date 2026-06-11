@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Landscaping Workers' Comp Insurance | MultiQuotePro</title>
-<meta name="description" content="Compare landscaping workers' compensation insurance quotes from multiple carriers. Coverage for lawn care, landscape install, tree care, and snow removal. Free, fast, no obligation." />
+<title>Construction Workers' Comp Insurance | MultiQuotePro</title>
+<meta name="description" content="Compare construction workers' compensation insurance quotes from multiple carriers. Coverage for general contractors, trades, and subcontractors. Free, fast, no obligation." />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="MultiQuotePro" />
-<meta property="og:title" content="Landscaping Workers' Comp Insurance | MultiQuotePro" />
-<meta property="og:description" content="Compare landscaping workers' compensation insurance quotes from multiple carriers. Coverage for lawn care, landscape install, tree care, and snow removal. Free, fast, no obligation." />
-<meta property="og:url" content="https://multiquotepro.com/landscaping-workers-comp.html" />
+<meta property="og:title" content="Construction Workers' Comp Insurance | MultiQuotePro" />
+<meta property="og:description" content="Compare construction workers' compensation insurance quotes from multiple carriers. Coverage for general contractors, trades, and subcontractors. Free, fast, no obligation." />
+<meta property="og:url" content="https://multiquotepro.com/construction-workers-comp.html" />
 <meta property="og:image" content="https://multiquotepro.com/og.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -78,7 +78,7 @@ img{max-width:100%;}
 .btn-primary{background:var(--accent);color:#fff;}
 .btn-primary:hover{background:var(--accent-dark);transform:translateY(-2px);}
 .hero{background:radial-gradient(1100px 480px at 78% -10%, rgba(0,0,0,.10), transparent 60%), linear-gradient(160deg,var(--navy) 0%, var(--navy-dark) 100%);color:#fff;padding:90px 0;}
-.hero-grid{display:grid;grid-template-columns:1fr .95fr;gap:56px;align-items:start;}
+.hero-grid{display:grid;grid-template-columns:1fr .95fr;gap:56px;align-items:center;}
 .eyebrow{display:inline-block;background:rgba(244,166,33,.16);color:var(--gold);padding:8px 16px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;}
 .hero-title{font-size:clamp(38px,4.6vw,60px);line-height:1.08;font-weight:800;letter-spacing:-1.5px;margin:22px 0;max-width:720px;}
 .highlight{color:var(--gold);}
@@ -199,10 +199,10 @@ MultiQuotePro
 <section class="hero">
 <div class="container hero-grid">
 <div>
-<div class="eyebrow">Landscaping Workers' Comp Quotes</div>
-<h1 class="hero-title">Compare <span class="highlight">Landscaping Workers' Comp</span> Quotes.</h1>
-<p>Outdoor labor, mowers, blades, and heavy equipment make landscaping a frequent-claim class — and seasonal payroll complicates pricing. We compare multiple markets to find the right coverage at the right price.</p>
-<p class="mini-proof">For lawn care, landscape design and install, hardscaping, tree care, irrigation, and snow removal.</p>
+<div class="eyebrow">Construction Workers' Comp Quotes</div>
+<h1 class="hero-title">Compare <span class="highlight">Construction Workers' Comp</span> Quotes.</h1>
+<p>Construction carries some of the highest workers' comp rates of any industry — and they vary widely by carrier and class code. We compare multiple markets to find the right coverage at the right price for your crew.</p>
+<p class="mini-proof">For general contractors, subcontractors, and the trades — roofing, framing, concrete, electrical, plumbing, HVAC, and more.</p>
 <div class="hero-points">
 <div><span>✓</span> Compare multiple carriers in one quick request</div>
 <div><span>✓</span> Stop overpaying — workers' comp rates aren't all the same</div>
@@ -215,7 +215,7 @@ MultiQuotePro
 
 <div class="form-card" id="form">
 <div class="form-head">
-<h3>Compare Your Landscaping Workers' Comp Quotes</h3>
+<h3>Compare Your Construction Workers' Comp Quotes</h3>
 <p>Submit the basics below. A workers' comp specialist follows up with competitive options — no obligation.</p>
 </div>
 <div class="form-body">
@@ -226,7 +226,7 @@ MultiQuotePro
   <div class="form-stat"><strong>Fast</strong><span>Turnaround</span></div>
 </div>
 <form action="https://procure-lead-engine.dan-fda.workers.dev/submit" method="POST">
-  <input type="hidden" name="lead_source" value="multiquotepro.com/landscaping-workers-comp" />
+  <input type="hidden" name="lead_source" value="multiquotepro.com/construction-workers-comp" />
   <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true" />
   <input type="hidden" name="site" value="multiquotepro.com" />
   <input type="hidden" name="vertical" value="Workers Compensation Insurance" />
@@ -430,24 +430,24 @@ MultiQuotePro
 <div class="container">
 <div class="section-head">
 <div class="eyebrow">Common Questions</div>
-<h2>Landscaping Workers' Comp FAQ</h2>
+<h2>Construction Workers' Comp FAQ</h2>
 </div>
 <div class="faq">
 <div class="faq-item">
-<h3>Is workers' comp required for landscaping businesses?</h3>
-<p>Nearly every state requires workers' comp once you have employees. Rules vary by state and employee count.</p>
+<h3>Is workers' comp required for construction?</h3>
+<p>Nearly every state requires workers' comp once you have employees, and many require it for construction even with a single worker. Some project contracts and GCs require it regardless.</p>
 </div>
 <div class="faq-item">
-<h3>How is landscaping workers' comp priced?</h3>
-<p>Mainly on payroll, class codes (including higher-risk tree work), claims history, and state rates — all of which differ by carrier, so comparing pays off.</p>
+<h3>Why is construction workers' comp so expensive?</h3>
+<p>Construction class codes carry higher injury risk, so base rates are higher — but they vary a lot by carrier, trade, payroll, and your experience mod, which is why comparing matters.</p>
 </div>
 <div class="faq-item">
-<h3>How is seasonal payroll handled?</h3>
-<p>Many carriers offer pay-as-you-go billing tied to actual payroll, which helps seasonal businesses avoid large audits. We compare options that offer it.</p>
+<h3>Do I need workers' comp for subcontractors or 1099 workers?</h3>
+<p>Often yes. Uninsured subs can be charged to your policy at audit. We help you understand how subs affect your premium and certificates.</p>
 </div>
 <div class="faq-item">
-<h3>How can I lower my landscaping workers' comp cost?</h3>
-<p>Accurate class codes, a clean claims record, safety practices, and comparing multiple carriers are the biggest levers.</p>
+<h3>How do I lower my construction workers' comp cost?</h3>
+<p>Correct class codes, a strong safety record / experience mod, proper sub documentation, and comparing multiple carriers are the biggest levers. We help with all of them.</p>
 </div>
 </div>
 </div>
@@ -457,7 +457,7 @@ MultiQuotePro
 <div class="container">
 <div class="cta-box">
 <div class="eyebrow">Free • Fast • No Obligation</div>
-<h2>Compare Landscaping Workers' Comp Quotes Today</h2>
+<h2>Compare Construction Workers' Comp Quotes Today</h2>
 <p>See if you're overpaying. One quick request and a specialist brings back competitive options from multiple carriers.</p>
 <a href="#form" class="btn btn-primary">Compare My Quotes →</a>
 </div>
