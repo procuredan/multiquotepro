@@ -12,6 +12,8 @@
 <meta property="og:url" content="https://multiquotepro.com/privacy-policy.html" />
 <meta property="og:image" content="https://multiquotepro.com/og.png" />
 <meta name="twitter:card" content="summary_large_image" />
+<link rel="canonical" href="https://multiquotepro.com/privacy-policy.html" />
+<meta name="robots" content="index, follow" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -78,6 +80,7 @@ img{max-width:100%;}
 .btn-primary{background:var(--accent);color:#fff;}
 .btn-primary:hover{background:var(--accent-dark);transform:translateY(-2px);}
 .hero{background:radial-gradient(1100px 480px at 78% -10%, rgba(0,0,0,.10), transparent 60%), linear-gradient(160deg,var(--navy) 0%, var(--navy-dark) 100%);color:#fff;padding:90px 0;}
+.hero--photo .hero-title,.hero--photo .hero p,.hero--photo .hero-points div,.hero--photo .trust-line,.hero--photo .mini-proof{text-shadow:0 1px 16px rgba(3,12,24,.55);}
 .hero-grid{display:grid;grid-template-columns:1fr .95fr;gap:56px;align-items:start;}
 .eyebrow{display:inline-block;background:rgba(244,166,33,.16);color:var(--gold);padding:8px 16px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;}
 .hero-title{font-size:clamp(38px,4.6vw,60px);line-height:1.08;font-weight:800;letter-spacing:-1.5px;margin:22px 0;max-width:720px;}
@@ -87,6 +90,15 @@ img{max-width:100%;}
 .hero-points{margin:28px 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 22px;max-width:640px;}
 .hero-points div{display:flex;align-items:flex-start;gap:12px;color:#fff;font-size:16px;}
 .hero-points span{color:var(--gold);font-weight:800;}
+.hero-ba{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.13);border-radius:16px;padding:12px;margin-bottom:28px;max-width:560px;}
+.hero-ba-head{display:flex;flex-direction:column;gap:2px;margin:2px 4px 11px;}
+.hero-ba-title{display:flex;align-items:center;gap:9px;color:#fff;font-weight:800;font-size:16px;letter-spacing:-.2px;}
+.hero-ba-title b{color:var(--gold);font-size:18px;line-height:1;}
+.hero-ba-sub{color:#AEBED0;font-size:12.5px;}
+.hero-ba-imgs{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.hero-ba-fig{position:relative;border-radius:10px;overflow:hidden;margin:0;}
+.hero-ba-fig img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;}
+.hero-ba-tag{position:absolute;top:8px;left:8px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:#fff;padding:4px 9px;border-radius:999px;box-shadow:0 3px 8px rgba(0,0,0,.3);}
 .trust-line{margin:8px 0 26px;font-size:14px;color:#C7D8E7;font-weight:500;}
 .form-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);color:var(--text);overflow:hidden;}
 .form-head{background:var(--accent);color:#fff;padding:24px 32px;}
@@ -98,6 +110,10 @@ img{max-width:100%;}
 .form-stat:last-child{border-right:none;}
 .form-stat strong{display:block;font-size:18px;font-weight:800;color:var(--navy);line-height:1.2;}
 .form-stat span{font-size:10px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);font-weight:600;}
+.form-stat--hl{background:rgba(225,29,42,.05);}
+.form-stat--hl strong{color:var(--accent);font-size:21px;}
+.form-stat--strike strong{color:#9aa6b2;text-decoration:line-through;text-decoration-color:#c2ccd6;}
+.stats-kicker{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--accent);text-align:center;margin-bottom:8px;}
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
 .form-grid .full{grid-column:1/-1;}
 .field-label{display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:6px;}
@@ -169,16 +185,63 @@ footer a{color:#A7BED1;display:block;margin-bottom:12px;}
 .thanks h1{font-size:40px;color:var(--navy);margin-bottom:16px;}
 .thanks p{font-size:19px;color:var(--muted);margin-bottom:14px;}
 @media(max-width:980px){
-.hero-grid,.review-grid,.how-grid,.footer-grid,.stats-grid,.seg-grid{grid-template-columns:1fr;}
+.hero-grid,.review-grid,.how-grid,.footer-grid,.stats-grid,.seg-grid,.ba-grid{grid-template-columns:1fr;}
 .form-grid{grid-template-columns:1fr;}
 .hero-points{grid-template-columns:1fr;}
 .form-stats{flex-wrap:wrap;}
 .form-stat{flex:1 1 45%;}
 }
 @media(max-width:640px){.nav-phone{display:none;}}
+.results{background:#fff;}
+.ba-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:1040px;margin:0 auto;}
+.ba-card{position:relative;border-radius:18px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);background:#fff;}
+.ba-card img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;}
+.ba-tag{position:absolute;top:14px;left:14px;font-size:13px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:#fff;padding:7px 14px;border-radius:999px;box-shadow:0 4px 12px rgba(0,0,0,.28);}
+.ba-before{background:#6b7280;}
+.ba-after{background:var(--gold);color:var(--navy);}
+.ba-cap{padding:16px 18px;color:var(--muted);font-size:15px;text-align:center;}
+.ba-video{max-width:1040px;margin:38px auto 0;border-radius:18px;overflow:hidden;box-shadow:var(--shadow);background:#000;}
+.ba-video video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#000;}
+.ba-vcap{text-align:center;color:var(--muted);font-size:15px;margin-top:16px;}
 .trust-strip{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:14px;}
 .tbadge{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;color:#5B6B7C;background:#F4F7FB;border:1px solid #E5EBF2;border-radius:999px;padding:5px 11px;white-space:nowrap;}
+.carriers{padding:44px 0;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.carriers-label{text-align:center;font-size:11px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted);margin-bottom:28px;}
+.carriers-grid{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:24px 48px;}
+.carriers-grid img{height:44px;width:auto;opacity:.72;filter:grayscale(25%);transition:.25s ease;}
+.carriers-grid img:hover{opacity:1;filter:grayscale(0%);}
+@media(max-width:640px){.carriers-grid img{height:32px;}.carriers-grid{gap:18px 28px;}}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:20px;}
+.blog-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px;box-shadow:0 8px 20px rgba(0,0,0,.05);display:flex;flex-direction:column;gap:10px;}
+.blog-card-tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--accent);background:rgba(0,0,0,.06);padding:4px 10px;border-radius:999px;}
+.blog-card h2{font-size:19px;color:var(--navy);line-height:1.25;margin:0;}
+.blog-card p{color:var(--muted);font-size:14px;flex:1;}
+.blog-card-date{font-size:12px;color:var(--muted);font-weight:500;}
+.blog-card .read-more{font-size:14px;font-weight:700;color:var(--accent);}
+.article-meta{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px;}
+.article-breadcrumb{font-size:13px;color:var(--muted);margin-bottom:24px;}
+.article-cta-box{margin-top:44px;padding:32px;background:var(--light);border-radius:16px;border:1px solid var(--line);}
+.article-cta-box h3{color:var(--navy);font-size:22px;margin-bottom:8px;}
+.article-cta-box p{color:var(--muted);margin-bottom:20px;}
+@media(max-width:980px){.blog-grid{grid-template-columns:1fr;}}
+.ms-progress{display:flex;align-items:center;margin-bottom:22px;}
+.ms-dot{width:30px;height:30px;border-radius:50%;background:var(--line);color:var(--muted);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;flex-shrink:0;transition:.2s;}
+.ms-dot.ms-active{background:var(--accent);color:#fff;}
+.ms-dot.ms-done{background:var(--navy);color:#fff;}
+.ms-line{flex:1;height:2px;background:var(--line);transition:.2s;}
+.ms-line.ms-done{background:var(--navy);}
+.ms-panel{display:none;}
+.ms-panel.ms-active{display:block;}
+.ms-q{font-size:20px;font-weight:800;color:#142132;line-height:1.3;margin-bottom:6px;}
+.ms-sub{font-size:14px;color:#4A5568;margin-bottom:4px;}
+.ms-opts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0 8px;}
+.ms-opt{padding:13px 14px;border:2px solid var(--line);border-radius:12px;font-size:14px;font-weight:600;color:var(--navy);cursor:pointer;text-align:left;background:#fff;transition:.15s;line-height:1.3;width:100%;}
+.ms-opt:hover,.ms-opt.ms-sel{border-color:var(--accent);background:rgba(244,166,33,.08);}
+.ms-back-btn{background:none;border:none;font-size:13px;color:var(--muted);font-weight:600;cursor:pointer;padding:0;margin-top:12px;display:inline-block;}
+.ms-back-btn:hover{color:var(--navy);}
+@media(max-width:500px){.ms-opts{grid-template-columns:1fr;}}
 </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"MultiQuotePro","url":"https://multiquotepro.com/","telephone":"(208) 730-2657","areaServed":"US","logo":"https://multiquotepro.com/og.png"}</script>
 </head>
 <body>
 <header class="nav">
@@ -195,10 +258,11 @@ MultiQuotePro
 </header>
 <div class="legal container">
 <h1>Privacy Policy</h1>
-<p><em>Last updated: June 9, 2026</em></p>
+<p><em>Last updated: June 16, 2026</em></p>
 <h2>Information We Collect</h2><p>MultiQuotePro collects the information you submit through our forms — such as your name, email, phone number, business details, and any details about your request — so a specialist can follow up about workers' comp.</p>
 <h2>How We Use It</h2><p>We use your information solely to respond to your request and connect you with the appropriate specialist or partner. Your information is never sold or shared with unrelated third parties.</p>
 <h2>How You're Contacted</h2><p>By submitting a form, you consent to be contacted by phone, text, and email. You may opt out at any time by replying STOP to texts or asking to be removed.</p>
+<h2>SMS &amp; Mobile Messaging</h2><p>Text messages are sent only by ProcureMedia, and your mobile number and SMS opt-in are never sold or shared with any third party or affiliate for marketing. Message and data rates may apply; message frequency varies. Reply STOP to opt out, HELP for help.</p>
 <h2>Data Retention &amp; Security</h2><p>We retain submissions only as long as needed to serve your request and protect them with reasonable safeguards.</p>
 <h2>Contact</h2><p>Questions? Email <a href="mailto:quotes@multiquotepro.com">quotes@multiquotepro.com</a>.</p>
 </div>
